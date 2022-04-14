@@ -1,0 +1,816 @@
+@charset 'utf-8';
+/*------------------------------------------------------------------
+[Master Stylesheet]
+Project:    Web23 connected flow
+Version:    1.0
+Created:    02.02.2022 03:42 PM
+Use:   Marketing Website Template
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[Table of contents]
+1. Common styles, fonts, icon
+2. Page loader / .page-loader
+3. Typography
+4. Buttons
+5. Forms fields
+/*------------------------------------------------------------------
+# [Color codes]
+# Primary color: #4660F1
+# */
+/*------------------------------------------------------------------
+[Typography]
+Body:               14px/1.6 Lexend, arial, sans-serif;
+Headers:            Lexend, arial, sans-serif;
+Section Title:      35px/1.3 Lexend”, arial, sans-serif;
+Section Heading:    24px/1.3 Lexend”, arial, sans-serif;
+Section Text:       15px/1.7 Lexend”, arial, sans-serif;
+-------------------------------------------------------------------*/
+
+/* --- Import - Fonts --- */
+
+@font-face {
+	font-family: Lexend;
+	src: url(../font/Lexend-Regular.ttf);
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: Lexend;
+	src: url(../font/Lexend-Bold.ttf);
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: Lexend;
+	src: url(../font/Lexend-Medium.ttf);
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: Lexend;
+	src: url(../font/Lexend-ExtraBold.ttf);
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: Lexend;
+	src: url(../font/Lexend-Light.ttf);
+	font-weight: 300;
+}
+
+
+body {
+	font-family: Lexend;
+	overflow-x: hidden !important;
+	width: 100% !important;
+	font-size: 62.5%;
+}
+
+/* Hero-section */
+.e-hero-section {
+	width: 100%;
+	background: linear-gradient(90deg, #4660F1 0.41%, #8800DC 140.38%);
+}
+
+.e-header {
+	background: linear-gradient(90deg, #4660F1 0.41%, #8800DC 140.38%);
+	width: 100%;
+}
+
+.e-icon {
+	font-size: 1.125rem;
+	line-height: 120%;
+	color: #FFFFFF;
+	border: none;
+	box-sizing: border-box;
+	background: none;
+	margin-left: 2rem;
+}
+
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+	color: #FFFFFF;
+	background: none;
+	border-bottom: 0.125rem solid #FFFFFF !important;
+	width: 2.5625rem;
+	padding-left: 0rem;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active:hover {
+	background-color: #ffd42d;
+}
+
+.nav-tabs .nav-link {
+	border: none;
+	color: #9a9ea3;
+}
+
+.nav-tabs .nav-link:hover {
+	background-color: #ffd42d;
+}
+
+.nav-tabs {
+	border-bottom: none;
+}
+
+.nav-link {
+	font-weight: 500;
+	font-size: 0.875rem;
+	line-height: 1.1875rem;
+	letter-spacing: -0.0293091875rem;
+	color: #FFFFFF;
+}
+
+.e-login-btn {
+	font-weight: 500;
+	font-size: 0.9375rem;
+	line-height: 1.1875rem;
+	letter-spacing: -0.0293091875rem;
+	border: none;
+	box-sizing: border-box;
+	color: #FFFFFF;
+	background: none;
+	padding-left: 0rem;
+}
+
+.e-login-btn:hover {
+	background-color: #ffd42d;
+}
+
+.e-get-btn {
+	font-weight: 700;
+	font-size: 1.125rem;
+	line-height: 1.375rem;
+	text-align: center;
+	letter-spacing: -0.033217125rem;
+	color: #4660F1;
+	background: #FFFFFF;
+	border: 0.5rem solid #FFFFFF;
+	border-radius: 0.5rem;
+	box-sizing: border-box;
+	margin-left: 2rem;
+	padding: 0.6rem 1.5rem;
+}
+
+.e-get-btn:hover {
+	background-color: #ffd42d;
+}
+
+.e-hero-section h1 {
+	font-weight: 500;
+	font-size: 4rem;
+	line-height: 120%;
+	text-align: center;
+	letter-spacing: -0.156315625rem;
+	color: #FFFFFF;
+	padding-top: 8rem;
+}
+
+.e-hero-section h5 {
+	font-weight: 300;
+	font-size: 1.25rem;
+	line-height: 150%;
+	text-align: center;
+	letter-spacing: -0.0190789375rem;
+	color: #FFFFFF;
+	margin-top: 1rem;
+}
+
+.e-input-form {
+	margin-top: 2.1rem;
+	box-shadow: 0rem 0.75rem 2.5rem rgb(0 0 0 / 8%);
+	z-index: 60;
+	margin-left: 10rem;
+}
+
+.e-domain {
+	width: 100%;
+	font-weight: 500;
+	font-size: 1.125rem;
+	color: #9EA3AA !important;
+	border-radius: 0.5rem !important;
+	margin-right: -12.5rem;
+	border-radius: 0.5rem !important;
+	padding: 1.5rem 1.75rem;
+	border: 0.0625rem solid #ced4da;
+}
+
+.e-verify-btn {
+	font-weight: 700;
+	font-size: 1.125rem;
+	border-radius: 0.5rem !important;
+	padding: 0.5rem 1.75rem;
+	margin: 0.5rem -0.25rem;
+	color: #FFFFFF;
+	background: #4660F1;
+}
+
+.e-ikbal1 {
+	position: absolute;
+	transform: translate(-1.5rem, 0rem);
+	display: block;
+}
+
+
+.e-left {
+	background: linear-gradient(90deg, #4660F1 0.41%, #8800DC 140.38%);
+	margin-right: -1.5rem;
+	padding-bottom: 19rem;
+}
+
+.e-icon2 {
+	font-size: 1.125rem;
+	line-height: 120%;
+	color: #FFFFFF;
+	border: none;
+	box-sizing: border-box;
+	background: none;
+	padding-left: 11rem;
+}
+
+.e-screen-domain {
+	padding-left: 9rem !important;
+	padding-top: 13rem;
+}
+
+.e-right {
+	background: #E5E5E5;
+	padding-top: 1rem;
+	padding-bottom: 9.3rem;
+}
+
+.e-right h2 {
+	font-weight: 600;
+	font-size: 1.5rem;
+	line-height: 1.875rem;
+	color: #11142F;
+}
+
+.e-phone {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 0.875rem;
+	line-height: 1.0625rem;
+	display: flex;
+	align-items: center;
+	color: #242631;
+	mix-blend-mode: normal;
+}
+
+.e-placeholder {
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	letter-spacing: 0.015625rem;
+	color: #242631;
+	mix-blend-mode: normal;
+	background: #F5F9FD;
+	border: 0.0625rem solid #4660F1;
+	box-sizing: border-box;
+	border-radius: 0.5rem;
+	margin: 0.5rem 0.5rem;
+	padding: 0.8rem 0.5rem;
+	margin-bottom: 2rem;
+}
+
+.e-psw {
+	font-weight: normal;
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	letter-spacing: 0.015625rem;
+	color: #9EA3AA;
+	mix-blend-mode: normal;
+	background: #F5F9FD;
+	border: 0.0625rem solid #9EA3AA;
+	box-sizing: border-box;
+	border-radius: 0.5rem;
+	margin: 0.5rem 0.5rem;
+	padding: 0.8rem 0.5rem;
+
+}
+
+.e-check-input {
+	background: #4660F1;
+	margin-right: 0.5rem;
+	margin-left: -1rem;
+}
+
+.e-check-label {
+	font-weight: normal;
+	font-size: 0.875rem;
+	line-height: 1.0625rem;
+	align-items: center;
+	color: #242631;
+	margin-bottom: 2rem;
+}
+
+.e-forgot-text {
+	font-weight: 600;
+	font-size: 0.875rem;
+	line-height: 1.0625rem;
+	align-items: center;
+	text-align: right;
+	color: #4660F1;
+	margin-bottom: 1rem;
+}
+
+.e-sign-btn {
+	font-weight: 600;
+	font-size: 1rem;
+	line-height: 1.25rem;
+	display: flex;
+	align-items: center;
+	color: #FFFFFF;
+	padding: 1rem 13.1875rem;
+	background: #4660F1;
+	border-radius: 00.5rem;
+	border: none;
+	margin-bottom: 1rem;
+}
+
+.e-or-sign {
+	font-weight: normal;
+	font-size: 0.875rem;
+	line-height: 1.0625rem;
+	display: flex;
+	align-items: center;
+	color: #242631;
+	margin-top: 1rem;
+}
+
+.e-or-sign span a {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 0.875rem;
+	line-height: 1.0625rem;
+	display: flex;
+	align-items: center;
+	text-align: right;
+	color: #4660F1;
+
+}
+
+.e-google-btn {
+	background: #F3F4F7;
+	border: 0.0625rem solid #F3F4F7;
+	box-sizing: border-box;
+	border-radius: 0.5rem;
+	padding: 0.2rem 3.8rem;
+	margin-bottom: 2rem;
+}
+
+.e-btn-text {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 1rem;
+	line-height: 1.25rem;
+	padding-top: 0.5rem;
+	padding-left: 0.5rem;
+	align-items: center;
+	color: #11142F;
+}
+
+.e-form-card {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3em;
+	margin-bottom: 3em;
+	border-radius: 0.625rem;
+	background-color: #ffff;
+	padding: 1.8rem;
+	box-shadow: 0.125rem 0.3125rem 1.25rem rgba(0, 0, 0, 0.1);
+}
+
+.modal-dialog {
+	max-width: 85%;
+	height: auto;
+	margin-top: 0rem;
+}
+
+.e-email-login {
+	display: flex;
+	flex-direction: column;
+}
+
+.e-choose {
+	font-weight: 600;
+	font-size: 2.25rem;
+	line-height: 3.5625rem;
+	letter-spacing: -0.0976975rem;
+	color: #11142F;
+}
+
+.e-card-left {
+	background: #F8F8F8;
+	border-radius: 0.625rem;
+	box-sizing: border-box;
+	border: none;
+}
+
+.e-card-middle {
+	background: linear-gradient(90deg, #4660F1 0.41%, #8800DC 140.38%);
+	border-radius: 0.625rem;
+	box-sizing: border-box;
+	border: none;
+}
+
+.e-card-title-h5 {
+	font-weight: normal;
+	font-size: 1.125rem;
+	line-height: 1.75rem;
+	text-align: center;
+	letter-spacing: -0.0351710625rem;
+	color: #9EA3AA;
+}
+
+.e-card-plan {
+	font-weight: 600;
+	font-size: 3rem;
+	line-height: 3.5rem;
+	text-align: center;
+	letter-spacing: -0.064655rem;
+	color: #11142F;
+}
+
+.e-card-plan1 {
+	font-weight: 600;
+	font-size: 3rem;
+	line-height: 3.5rem;
+	text-align: center;
+	letter-spacing: -0.064655rem;
+	color: #FFFFFF;
+}
+
+.e-card-text-left {
+	font-weight: 400;
+	font-size: 1.0625rem;
+	line-height: 1.4375rem;
+	text-align: center;
+	letter-spacing: -0.033217125rem;
+	color: #242631;
+}
+
+.e-card-text-middle {
+	font-weight: 400;
+	font-size: 1.0625rem;
+	line-height: 1.4375rem;
+	text-align: center;
+	letter-spacing: -0.033217125rem;
+	color: #FFFFFF;
+}
+
+.e-popular-btn {
+	font-weight: 600;
+	font-size: 0.75rem;
+	line-height: 0.9375rem;
+	background: linear-gradient(90deg, #E9ECFF 2.38%, #F6E7FF 99.05%);
+	border-radius: 1.5rem;
+	padding: 0.25rem 0.5rem;
+	border: 0.0625rem solid #4660F1;
+	color: #4660F1;
+	margin-left: 15rem;
+}
+
+.e-buy-btn {
+	font-weight: 700;
+	font-size: 1.0625rem;
+	line-height: 1.3125rem;
+	text-align: center;
+	letter-spacing: -0.033217125rem;
+	color: #5454D4;
+	background: #FFFFFF;
+	border: 0.0625rem solid #EAE9F2;
+	border-radius: 0.625rem;
+	padding: 1.125rem 6.875rem;
+	margin-top: 11rem;
+}
+
+.e-menu-icon {
+	width: 15%;
+}
+
+.e-home {
+	font-weight: 500;
+	font-size: 0.9375rem;
+	line-height: 1.1875rem;
+	letter-spacing: -0.0293091875rem;
+	color: #FFFFFF;
+}
+
+.e-home:hover {
+	background-color: #ffd42d;
+}
+
+.e-mob-menu-wrap {
+	background: #4660F1;
+}
+
+.offcanvas-header {
+	background: #4660F1;
+}
+
+.offcanvas-body {
+	flex-grow: 1;
+	padding: 1rem 1rem;
+	overflow-y: visible;
+}
+
+.navbar-nav .nav-link {
+	padding-left: 0;
+}
+
+.navbar-light .navbar-brand {
+	font-size: 1.125rem;
+	line-height: 120%;
+	color: #FFFFFF;
+}
+
+a:hover {
+	background-color: #ffd42d;
+}
+
+Nav.Link:hover {
+	background-color: #ffd42d;
+}
+
+
+/* Figure Section */
+.e-figure {
+	width: 100%;
+	background: #FFFFFF;
+}
+
+.e-card-title {
+	font-weight: 600;
+	font-size: 1.125rem;
+	line-height: 1.375rem;
+	color: #9EA3AA;
+}
+
+.e-card-text {
+	font-weight: 600;
+	font-size: 3rem;
+	line-height: 3.5625rem;
+	letter-spacing: -0.0976975rem;
+	color: #11142F;
+}
+
+.e-card-paragraph {
+	font-weight: 400;
+	font-size: 1.25rem;
+	line-height: 150%;
+	letter-spacing: -0.0390789375rem;
+	color: #242631;
+}
+
+/* Business Figures Section */
+.e-business {
+	width: 100%;
+	background: linear-gradient(90deg, #4660F1 0.41%, #8800DC 140.38%);
+}
+
+.e-number {
+	font-weight: 600;
+	font-size: 3rem;
+	line-height: 3.75rem;
+	color: #FFFFFF;
+
+}
+
+.e-resolved {
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.25rem;
+	color: #FFFFFF;
+}
+
+
+/* Feature Section */
+.e-feature {
+	width: 100%;
+	background: linear-gradient(90deg, #E9ECFF 2.38%, #F6E7FF 99.05%);
+}
+
+.e-card {
+	border: none;
+	background: #FFFFFF;
+	border-radius: 0.5rem;
+	padding: 2.7rem 0.8rem;
+	box-sizing: border-box;
+}
+
+.e-title {
+	font-weight: 600;
+	font-size: 1.5rem;
+	line-height: 2.25rem;
+	text-align: center;
+	letter-spacing: -0.04689475rem;
+	color: #19191B;
+}
+
+.e-text {
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	text-align: center;
+	letter-spacing: -0.0312631875rem;
+	color: #696871;
+}
+
+.e-card-img {
+	width: 40%;
+	height: auto;
+	margin: 0 auto;
+}
+
+/* Partners & Investors Section */
+.e-partners {
+	width: 100%;
+	background: #FFFFFF;
+}
+
+.e-h3 {
+	font-weight: 600;
+	font-size: 1.125rem;
+	line-height: 1.375rem;
+	color: #11142F;
+}
+
+.e-card2 {
+	border: none;
+	box-shadow: 0.125rem 1rem 3rem #ECEFFF;
+	border-radius: 0.5rem;
+	background: #FFFFFF;
+
+}
+
+.e-card2-img {
+	padding-left: 2.5rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	padding-right: 2.5rem;
+}
+
+.e-metamask-img {
+	padding-left: 0.5rem;
+	padding-top: 2rem;
+	padding-bottom: 1.8rem;
+	padding-right: 0.5rem;
+}
+
+/* Customer Stories section */
+.e-story {
+	width: 100%;
+	background: url(../img/home/Mask\ .svg);
+	background-color: #F2F4FF;
+	background-size: cover;
+	height: auto;
+	background-repeat: no-repeat;
+
+}
+
+.e-customer {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 1.125rem;
+	line-height: 1.375rem;
+	color: #9EA3AA;
+	padding-top: 12rem;
+
+}
+
+.e-excellent {
+	font-weight: 600;
+	font-size: 3rem;
+	line-height: 3rem;
+	letter-spacing: 0.1rem;
+	color: #11142F;
+}
+
+.e-sam {
+	font-weight: 600;
+	font-size: 1.25rem;
+	line-height: 1.5625rem;
+	color: #11142F;
+
+}
+
+.e-ceo {
+	font-weight: normal;
+	font-size: 1.25rem;
+	line-height: 1.5625rem;
+	color: #11142F;
+	padding-bottom: 6rem;
+}
+
+.e-mask {
+	width: 223% !important;
+	transform: translate(-33rem, 7rem);
+}
+
+.carousel-dark .carousel-indicators [data-bs-target] {
+	background-color: #4660F1;
+}
+
+.carousel-indicators [data-bs-target] {
+	width: 0.625rem;
+	height: 0.625rem;
+	border-radius: 100%;
+	margin-right: 0.4375rem;
+}
+
+.carousel-indicators {
+	margin-right: 79%;
+	margin-bottom: 4rem;
+	margin-left: 0%;
+}
+
+/* CTA Section */
+.e-cta {
+	width: 100%;
+	background: linear-gradient(90deg, #4660F1 0.41%, #8800DC 140.38%);
+}
+
+.e-start {
+	font-weight: 600;
+	font-size: 4rem;
+	line-height: 110%;
+	text-align: center;
+	letter-spacing: -0.156315625rem;
+	color: #FFFFFF;
+	/* padding-top: 2rem; */
+}
+
+.e-started-btn {
+	font-weight: 700;
+	font-size: 1.125rem;
+	line-height: 1.375rem;
+	text-align: center;
+	letter-spacing: -0.033217125rem;
+	color: #FFFFFF;
+	background: #452EAB;
+	border: none;
+	border-radius: 0.5rem;
+	box-sizing: border-box;
+	padding: 1.5625rem 3.25rem;
+}
+
+/* Footer section */
+.e-footer {
+	background: #11142F;
+	width: 100%;
+	padding-top: 8rem;
+}
+
+.e-logo {
+	max-width: 130%;
+	height: auto;
+}
+
+h4 {
+	font-weight: 600;
+	font-size: 0.75rem;
+	line-height: 0.9375rem;
+	letter-spacing: 0.05em;
+	color: #FFFFFF;
+	padding-bottom: 1.5rem;
+}
+
+.e-footer p {
+	font-weight: normal;
+	font-size: 0.875rem;
+	line-height: 1.0625rem;
+	color: rgba(255, 255, 255, 0.5);
+	padding-bottom: 1rem;
+}
+
+a {
+	color: rgba(255, 255, 255, 0.5);
+	text-decoration-line: none;
+}
+
+.e-evoque-link {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.e-social-media {
+	padding-top: 8rem;
+}
+
+hr {
+	opacity: 0.1;
+	border: 0.0625rem solid #FFFFFF;
+}
+
+.e-footer span {
+	font-size: 0.75rem;
+	line-height: 2.125rem;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.e-footer span a {
+	font-size: 0.8125rem;
+	line-height: 2.125rem;
+	color: rgba(255, 255, 255, 0.5);
+	text-decoration-line: none;
+}

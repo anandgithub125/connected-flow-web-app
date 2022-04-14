@@ -1,0 +1,292 @@
+@charset 'utf-8';
+
+/* ==============================
+   Tablet landskape
+   ============================== */
+@media only screen and (max-width: 1277px) {
+  .e-ikbal1 {
+    width: 32.4%;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .nav-link {
+    font-size: 0.835rem;
+  }
+
+  .e-get-btn {
+    font-size: 1rem;
+    margin-left: 0rem;
+  }
+
+  .e-hero-section h1 {
+    font-size: 3.6rem;
+  }
+
+  .e-hero-section h5 {
+    font-weight: 300;
+    font-size: 1.19rem;
+  }
+
+  .e-ikbal1 {
+    width: 32.3%;
+  }
+
+  .e-excellent {
+    font-size: 2.5rem;
+  }
+
+}
+
+@media only screen and (max-width: 1183px) {
+  .e-story {
+    background-size: 100% 117%;
+  }
+}
+
+@media only screen and (max-width: 1103px) {
+  .e-input-form {
+    margin-left: 9rem;
+    width: 89%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .nav-link {
+    font-size: 0.771rem;
+  }
+
+  .e-story {
+    background-size: 100% 119%;
+  }
+
+  .e-social-media {
+    padding-top: 10rem;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .e-hero-section h1 {
+    padding-top: 0rem;
+  }
+
+  .e-input-form {
+    margin-left: 7.7rem;
+  }
+
+  .e-ikbal1 {
+    width: 32.1%;
+  }
+
+  .e-card-text {
+    font-size: 2rem;
+  }
+
+  .e-card-paragraph {
+    font-size: 0.9rem;
+  }
+
+  .e-login-btn {
+    font-size: 0.771rem;
+    padding-left: 1.5rem;
+  }
+
+  .e-get-btn {
+    margin-left: 1.5rem;
+  }
+
+  .e-title {
+    font-size: 1.1rem;
+    line-height: 1rem;
+  }
+
+  .e-text {
+    font-size: 0.5rem;
+  }
+
+  .e-start {
+    font-size: 2.5rem;
+  }
+
+  .e-started-btn {
+    margin-right: 3rem;
+  }
+
+  .e-customer {
+    font-size: 1.025rem;
+    padding-top: 8rem;
+  }
+
+  .e-excellent {
+    font-size: 2rem;
+  }
+
+  .e-stick {
+    width: 0.5%;
+    margin-top: -3rem;
+  }
+
+  .e-sam {
+    font-size: 1.25rem;
+  }
+
+  .e-ceo {
+    font-size: 1.05rem;
+  }
+
+  .carousel-indicators {
+    margin-left: 3%;
+  }
+
+  .e-story {
+    background-size: 97% 138%;
+  }
+
+  .e-card2 {
+    margin-bottom: 2rem;
+  }
+
+  .e-domain {
+    font-size: 1rem;
+  }
+
+  .e-verify-btn {
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+
+  .e-icon {
+    margin-left: 0rem;
+  }
+
+}
+
+@media only screen and (max-width: 767px) {
+  .e-hero-section {
+    background: #4660F1;
+    width: 100%;
+    background-image: url(../img/home/ikbal1.svg);
+    background-size: contain;
+    height: auto;
+    background-repeat: no-repeat;
+  }
+
+  .e-hero-section h1 {
+    text-align: left;
+    font-size: 3rem;
+  }
+
+  .e-ikbal1 {
+    display: none;
+  }
+
+  .e-ikbal2 {
+    display: none;
+  }
+
+  .e-hero-section h5 {
+    text-align: left;
+    font-size: 1rem;
+  }
+
+  .e-input-form {
+    margin: 1.5rem;
+  }
+
+  .e-card {
+    margin-bottom: 3rem;
+  }
+
+  .e-metamask-img {
+    padding-top: 2.5rem;
+    padding-bottom: 1.9rem;
+  }
+
+  .e-story {
+    background-size: 97% 143%;
+  }
+
+  .e-resolved {
+    padding-bottom: 2rem;
+  }
+
+  .e-excellent {
+    font-size: 1.5rem;
+  }
+
+  .e-sam {
+    font-size: 1rem;
+  }
+
+  .e-ceo {
+    font-size: 0.8rem;
+  }
+
+  .carousel-indicators {
+    margin-left: -5%;
+  }
+
+  .e-start {
+    font-size: 2rem;
+    padding-left: 6rem;
+    margin-bottom: -1rem;
+  }
+
+  .e-started-btn {
+    font-size: 1rem;
+    padding: 0.5625rem 2.25rem;
+    margin-top: -1rem;
+  }
+
+  .e-footer p {
+    font-size: 0.41rem;
+  }
+
+  .e-media {
+    padding-right: 1rem !important;
+  }
+
+  .e-evoque-link {
+    text-align: start !important;
+
+  }
+
+}
+
+@media only screen and (max-width: 668px) {
+  .carousel-indicators {
+    margin-left: 10%;
+  }
+
+  .e-story {
+    background-size: 97% 151%;
+  }
+
+}
+
+@media only screen and (max-width: 518px) {
+  .e-story {
+    background-size: 97% 161%;
+  }
+
+  .e-customer {
+    font-size: 1rem;
+    padding-top: 6rem;
+  }
+
+  .e-excellent {
+    font-size: 1.3rem;
+  }
+
+  .e-sam {
+    font-size: 0.8rem;
+  }
+
+  .e-ceo {
+    font-size: 0.7rem;
+  }
+
+  .carousel-indicators {
+    margin-left: -4%;
+  }
+}
