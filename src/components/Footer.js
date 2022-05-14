@@ -42,7 +42,7 @@ const Footer = () => {
                 <a href=''>
                   <i><img className='img-fluid e-media pe-5' src={youtube} alt='Web app YouTube' /></i>
                 </a>
-                <a href='https://www.linkedin.com/company/team-evoque'>
+                <a href='https://www.linkedin.com/in/anand-yadav-8a21b1191/'>
                   <i><img className='img-fluid e-media' src={linkedin} alt='Web app Linkedin' /></i>
                 </a>
               </div>
@@ -54,7 +54,7 @@ const Footer = () => {
               <span>© 2021 CollectSwap. All rights reserved.</span>
             </div>
             <div className='col-lg-6 col-md-6 col-sm-12 text-end e-evoque-link'>
-              <span>Powered by <a className='link-secondary' href='#'>Evoque Innovative Lab</a></span>
+              <span>Powered by <a className='link-secondary' href='#'>Ace</a></span>
             </div>
           </div>
         </div>
